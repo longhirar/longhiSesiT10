@@ -1,0 +1,37 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+   padding: 1rem;
+}
+.principal{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.font-style{
+    font-size: 3rem;
+
+}
+
+.font-style02{
+    font-size: 1.8rem;
+}
+
+.div-calculos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.div-calculos > div {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: .5rem;
+}
