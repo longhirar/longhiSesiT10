@@ -35,10 +35,40 @@ body{
     border-radius: .5rem;
     transition: all 100ms ease-in-out;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .div-calculos > div:hover {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     padding:2rem;
 
+}
+
+.div-calculos > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"] {
+    padding: .5rem;
+    margin: .25rem;
+    border-radius: 1rem;
+    background-color: #ccc;
+    border: none;
+}
+
+button {
+    padding: 1rem;
+    margin: .25rem;
+    border-radius: .5rem;
+    background-color: #ccc;
+    border: none;
+    
+    transition: all 100ms ease-in-out;
+}
+button:hover {
+    background-color: blue;
+    color:white;
 }
