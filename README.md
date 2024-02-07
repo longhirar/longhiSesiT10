@@ -1,2 +1,5 @@
 # SESI-T10
-atividades de desenvolvimento
+
+Aluno: Rafael Longhi
+
+Atividades da aula de Desenvolvimento de Aplicativos
