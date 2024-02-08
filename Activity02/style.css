@@ -80,9 +80,6 @@ section {
     justify-content: space-between;
 }
 
-.leftContact,.rightContact{
-    background-color: #faf;
-}
 
 .imgwrap {
     position: relative;
@@ -101,4 +98,25 @@ section {
     transform: rotate(360deg);
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 1rem;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff0; 
+}
+::-webkit-scrollbar-track:hover {
+    background: #eee; 
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+
+}
