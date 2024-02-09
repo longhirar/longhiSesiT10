@@ -49,12 +49,33 @@
     </section>
     <section id="contato">
         <div class="leftContact">
-            <h1>Contato</h1>
-            <p>Aqui voce pode me mandar uma mensagem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, corrupti.</p>
+            <div>
+                <h1>Contato</h1>
+                <p>Aqui voce pode me mandar uma mensagem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, corrupti.</p>
+            </div>
+            <div>
+                <label for="cont-nome">Nome:</label>
+                <input type="text" id="cont-nome">
+            </div>
+            <div>
+                <label for="cont-msg">Mensagem:</label>
+                <textarea name="msg" id="cont-msg"></textarea>
+            </div>
+            <button onclick="conferirMsg()">
+                Conferir Mensagem
+            </button>
         </div>
         <div class="rightContact">
-            <p>A direita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, quibusdam?</p>
+            <p>Nome: <span id="cont-nome-span"></span></p>
+            <p>Mensagem: <span id="cont-msg-span"></span></p>
         </div>
     </section>
+    <footer>
+        <img src="ditto.gif" alt="Ditto">
+        <span id="footer-copyright"></span>
+        <script>
+            document.querySelector("#footer-copyright").innerHTML = "Copyright &copy; %YEAR% Rafael Longhi. Todos os direitos reservados.".replace('%YEAR%', new Date().getFullYear())
+        </script>
+    </footer>
 </body>
 </html>
