@@ -1,6 +1,6 @@
 # SESI-T10
 
-![Dancing Ditto](https://raw.githubusercontent.com/longhirar/longhiSesiT10/main/Activity02/ditto.gif "Dancing Ditto")
+![Dancing Ditto](https://raw.githubusercontent.com/longhirar/longhiSesiT10/main/Activity02/img/ditto.gif "Dancing Ditto")
 
 Aluno: Rafael Longhi
 

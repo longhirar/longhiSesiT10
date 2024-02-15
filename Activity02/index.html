@@ -46,6 +46,41 @@
     </section>
     <section id="tecnologia">
         <h1>Tecnologias</h1>
+        <div class="tecno-cont">
+            <div class="tecno-div">
+                <div class="tecno-imgwrap">
+                    <img src="img/htmlLogo.png" alt="HTML Logo">
+                </div>
+                <h1>HTML</h1>
+                <p>
+                    O HTML, ou HyperText Markup Language, é a linguagem que dá vida às páginas web que você visita todos os dias. Ela é como o esqueleto de uma página, definindo sua estrutura e organização. Imagine-a como os blocos de montar de um site, permitindo que você organize o conteúdo em seções, parágrafos, títulos, imagens e muito mais.
+                </p>
+                <p>
+                    Através de tags simples e intuitivas, o HTML te permite criar páginas com títulos chamativos, textos informativos, imagens atraentes e links para outras páginas. É como se você estivesse escrevendo um manual de instruções para o navegador, dizendo onde cada elemento deve ser colocado e como ele deve se comportar.
+                </p>
+            </div>
+            <div class="tecno-div">
+                <div class="tecno-imgwrap">
+                    <img src="img/cssLogo.png" alt="CSS Logo">
+                </div>
+                <h1>CSS</h1>
+                <p>
+                    O CSS, ou Cascading Style Sheets, é a linguagem que dá vida às páginas web. É como se fosse a tinta, o pincel e a tela do artista web, permitindo que ele defina cores, tamanhos, posições e outros aspectos visuais de cada elemento da página.
+                </p>
+                <p>
+                    Com o CSS, podemos transformar páginas simples em experiências visuais ricas e atraentes, com layouts criativos, animações e interações que encantam os usuários. Essa linguagem é fundamental para a construção de sites modernos, responsivos e acessíveis, adaptando-se a diferentes dispositivos e necessidades.
+                </p>
+                <p>
+                    Dominar o CSS significa ter o poder de transformar a visão em realidade na web, criando interfaces elegantes, intuitivas e que transmitam a mensagem desejada de forma impactante.
+                </p>
+            </div>
+            <div class="tecno-div">
+                <div class="tecno-imgwrap">
+                    <img src="img/jsLogo.png" alt="JavaScript Logo">
+                </div>
+                <h1>JavaScript</h1>
+            </div>
+        </div>
     </section>
     <section id="contato">
         <div class="leftContact">
@@ -53,14 +88,13 @@
                 <h1>Contato</h1>
                 <p>Aqui voce pode me mandar uma mensagem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, corrupti.</p>
             </div>
-            <div>
-                <label for="cont-nome">Nome:</label>
-                <input type="text" id="cont-nome">
-            </div>
-            <div>
-                <label for="cont-msg">Mensagem:</label>
-                <textarea name="msg" id="cont-msg"></textarea>
-            </div>
+            
+            <label for="cont-nome">Nome:</label>
+            <input type="text" id="cont-nome">
+
+            <label for="cont-msg">Mensagem:</label>
+            <textarea name="msg" id="cont-msg"></textarea>
+
             <button onclick="conferirMsg()">
                 Conferir Mensagem
             </button>
@@ -71,7 +105,7 @@
         </div>
     </section>
     <footer>
-        <img src="ditto.gif" alt="Ditto">
+        <img src="img/ditto.gif" alt="Ditto">
         <span id="footer-copyright"></span>
         <script>
             document.querySelector("#footer-copyright").innerHTML = "Copyright &copy; %YEAR% Rafael Longhi. Todos os direitos reservados.".replace('%YEAR%', new Date().getFullYear())
