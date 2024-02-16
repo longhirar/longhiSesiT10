@@ -39,12 +39,13 @@ header > ul {
 }
 
 a {
-    color: #99f;
+    color: #44f;
     text-decoration: none;
     transition: color 100ms ease-in-out;
 }
 a:hover {
-    color: #44f;
+    color: #22f;
+    text-decoration: underline;
 }
 
 section {
@@ -111,9 +112,8 @@ section {
 
 #tecnologia {
     background-color: #bbf;
-
-
 }
+
 .tecno-cont {
     display: flex;
     flex-direction: row;
@@ -142,6 +142,17 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    transition: all 200ms ease-in-out;
+    padding:1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #fff8;
+    flex-wrap: wrap;
+}
+
+.tecno-div:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #ffff;
 }
 
 /*
