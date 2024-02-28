@@ -7,12 +7,30 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="login-wrap">
-        <input type="email" name="email" id="input-email" placeholder="benjas@example.com">
-        <input type="password" name="password" id="input-password">
+    <div class="login-wrap dialog">
+        <input type="email" name="email" id="input-email" placeholder="Email">
+        <input type="password" name="password" id="input-password" placeholder="Senha">
         <button class="btn btn-login" onclick="login()">Login</button>
+        <p>Não tem uma conta? <span class="link" onclick="signup_show()">Criar Conta</span></p>
     </div>
-    <div class="logged-in hidden">
+    <div class="signup-wrap dialog hidden">
+        <input type="text" name="name" id="input-name-signup" placeholder="Nome Completo">
+        <input type="email" name="email" id="input-email-signup" placeholder="Email">
+        <input type="password" name="password" id="input-password-signup" placeholder="Senha">
+        <p>
+            Sua senha precisa ter:
+            <ul>
+                <li>8 caractéres ou mais;</li>
+                <li>Pelo menos uma letra maiúscula;</li>
+                <li>Pelo menos um número. </li>
+            </ul>
+        </p>
+
+        <input type="password" name="password" id="input-password-2-signup" placeholder="Confirmar Senha">
+        <button class="btn btn-login" onclick="signup()">Criar Conta</button>
+        <p>Já possui uma conta? <span class="link" onclick="login_show()">Fazer login</span></p>
+    </div>
+    <div class="logged-in dialog hidden">
         <h1 id="greet-title"></h1>
         <button class="btn" onclick="logout()">Deslogar</button>
     </div>

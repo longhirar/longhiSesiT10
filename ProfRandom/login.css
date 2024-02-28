@@ -13,16 +13,15 @@ body {
     height: 100vh;
 }
 
-.login-wrap {
+.dialog {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-
     padding: 1rem;
     gap:1rem;
-
     border: black 1px solid;
     border-radius: .25rem;
+
 }
 
 input {
@@ -37,10 +36,23 @@ input {
     border: black 1px solid;
     padding: .25rem;
     border-radius: .25rem;
+    font-weight: bold;
 }
 
 .btn-login {
     background-color: green;
+}
+
+.link {
+    color:#00f;
+}
+.link:hover {
+    color:#44f;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
 }
 
 .hidden {
