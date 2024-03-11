@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableto Excel</title>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabela para Excel</h1>
+    <div>
+        <input type="text" name="nome" id="input-nome" placeholder="Descrição">
+        <input type="number" name="valor" id="input-valor" placeholder="Valor">
+        <input type="number" name="qtd" id="input-qtd" placeholder="Quantidade">
+    </div>
+    <br>
+    <div>
+        <button onclick="adicionarItem()">Adicionar a Tabela</button>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Qtd.</th>
+                </tr>
+            </thead>
+            <tbody class="tabela">
+                <tr>
+                    <td>Cocaina</td>
+                    <td>R$ 10/g</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
