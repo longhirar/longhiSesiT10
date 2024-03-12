@@ -19,6 +19,7 @@
     <br>
     <div>
         <button onclick="adicionarItem()">Adicionar a Tabela</button>
+        <button onclick="criarXlsx()">Baixar como .XLSX</button>
     </div>
     <div>
         <table>
@@ -29,12 +30,7 @@
                     <th>Qtd.</th>
                 </tr>
             </thead>
-            <tbody class="tabela">
-                <tr>
-                    <td>Cocaina</td>
-                    <td>R$ 10/g</td>
-                    <td>1</td>
-                </tr>
+            <tbody class="tabela" id="tabela">
             </tbody>
         </table>
     </div>
