@@ -12,20 +12,81 @@ body {
     height: 100vh;
     width: 100vw;
 }
-window {
-    background-color: #fff3;
-    border: #fff4 1px solid;
+wui-desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+wui-desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+wui-window {
+    background-color: #fff2;
+    border: #fff3 1px solid;
     border-radius: 1rem;
-    padding: 5rem;
     backdrop-filter: blur(7px);
     position: absolute;
     z-index: 9;
     text-align: center;
+    resize: both;
+    overflow: hidden;
 }
-  
-window > #header {
-    padding: 10px;
-    cursor: move;
-    z-index: 10;
-    background-color: #fff4;
+wui-window > wui-window-content {
+    display: flex;
+    height: max-content;
+}
+.wui-header {
+    color: white;
+    text-shadow: 0 0 10px black;
+    padding:1rem;
+    padding-top:.25rem;
+    padding-bottom:.25rem;
+}
+
+
+ul.wui-list {
+    list-style: none;
+    padding:.1rem;
+    margin: 0;
+}
+ul.wui-list > li {
+    padding: .1rem;
+    margin: 0;
+}
+
+.wui-button {
+    border: #888f 1px solid;
+    background-color: white;
+    color: black; 
+}
+.wui-button:hover {
+    border: #88f 1px solid;
+    background-color: #00f;
+    color: white;
+}
+
+.wui-button.wui-acrylic {
+    border: #0000 1px solid;
+    background-color: #fff0;
+    color: white;
+    text-shadow: 0 0 10px black;
+    padding: .5rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border-radius: 1rem;
+}
+.wui-button.wui-acrylic:hover {
+    border: #0000 1px solid;
+    background-color: #fff3;
+    color: white;
+    text-shadow: 0 0 10px black;
+    padding: .5rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border-radius: .3rem;
+}
+.wui-button:focus {
+    background-color: #8882;
 }

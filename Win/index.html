@@ -8,9 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <window>
-        <div id="header">header [drag me]</div>
-    </window>
+    <wui-desktop>
+        <wui-desktop-icon>
+            <img src="http://picsum.photos/64/64" alt="AppIcon">
+            <p>Desktop Icon</p>
+        </wui-desktop-icon>
+    </wui-desktop>
+    <wui-window-host>
+
+        <wui-window>
+            <div class="wui-header">header [drag me]</div>
+            <wui-window-content>
+                <ul class="wui-list">
+                    <li><button class="wui-button wui-acrylic">Opção 1</button></li>
+                    <li><button class="wui-button wui-acrylic">Opção 2</button></li>
+                    <li><button class="wui-button wui-acrylic">Opção 3</button></li>
+                </ul>
+                <div style="background-color: white">outra div do caralho</div>
+            </div>
+        </wui-window>
+    </wui-window-host>
     <script src="script.js"></script>
 </body>
 </html>

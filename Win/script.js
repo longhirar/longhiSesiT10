@@ -1,8 +1,8 @@
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
+  if (elmnt.children[0].classList.contains('wui-header')) {
     // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    elmnt.children[0].onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
@@ -39,6 +39,6 @@ function dragElement(elmnt) {
   }
 }
 
-document.querySelectorAll('window').forEach(w => {
+document.querySelectorAll('wui-window').forEach(w => {
     dragElement(w);
 })
