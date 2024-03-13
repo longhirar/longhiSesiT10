@@ -16,11 +16,29 @@ const fetchPersonagens = async () => {
         contentDiv.innerHTML = "";
         dados.results.forEach(pessoa => {
             var pessoaDiv = document.createElement('div');
-            var genderHTML = (pessoa.gender == "Female" || pessoa.gender == "Male") ? `<span class="material-symbols-outlined">${pessoa.gender.toLowerCase()}</span>` : pessoa.gender;
-            pessoaDiv.innerHTML = `<h1>${pessoa.name}</h1><h5>${pessoa.species} - ${pessoa.status} - ${genderHTML}</h5>`
+            pessoaDiv.classList.add('char-div')
+            var genderHTML = (pessoa.gender == "Female" || pessoa.gender == "Male") ? `<span class="material-symbols-outlined">${pessoa.gender.toLowerCase()}</span> ${pessoa.gender}` : pessoa.gender;
+            var statusHTML = ""
+            if (pessoa.status == "Alive") {
+                statusHTML = `<span class="char-status char-status-alive"> Alive </span>`
+            } else if (pessoa.status == "Dead") {
+                statusHTML = `<span class="char-status char-status-dead"> Dead </span>`
+            } else {
+                statusHTML = `<span class="char-status char-status-unknown">${pessoa.status}</span>`
+            }
+            pessoaDiv.innerHTML = `
+                <img class="char-img" src="${pessoa.image}" alt="${pessoa.name}" />
+                
+                <h1 class="char-name">${pessoa.name}</h1>
+                <h5 class="char-desc">${pessoa.species} - ${statusHTML} - ${genderHTML}</h5>
+            `
             contentDiv.appendChild(pessoaDiv);
         })
     } catch(e) {
         console.log(e);
     }
+}
+
+const searchByName = () => {
+
 }
