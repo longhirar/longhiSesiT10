@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    --accent-color: linear-gradient(203deg, rgba(2,0,36,1) 30%, rgba(190,0,255,1) 100%);
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(203deg, rgba(2,0,36,1) 30%, rgba(190,0,255,1) 100%);
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page-login-form-div {
+    background-color: #fff3;
+    backdrop-filter: blur(7px);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+@media (width <= 400px) {
+    .page-login-form-div {
+        width: 80vw;
+    }
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgb(255, 0, 255);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+input::placeholder {
+
+}
