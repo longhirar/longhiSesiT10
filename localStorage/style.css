@@ -36,14 +36,20 @@ body {
         width: 80vw;
     }
 }
-
-input {
-    border: none;
-    border-bottom: 2px solid rgb(255, 0, 255);
-    padding: .5rem;
-    border-radius: .5rem;
+.page-login-loginbtn {
+    background-color: limegreen;
+    color: white;
 }
 
-input::placeholder {
-
+input, button {
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
+    transition: all 1000ms ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+input:focus, button:focus  {
+    transition: all 1000ms ease-in-out;
+    outline: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
