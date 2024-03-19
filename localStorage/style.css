@@ -22,6 +22,15 @@ body {
     width: 100vw;
 }
 
+#page-login-logo {
+    width: 15rem;
+    border-radius: .5rem;
+}
+
+#page-login-error {
+    color: red;
+}
+
 .page-login-form-div {
     background-color: #fff3;
     backdrop-filter: blur(7px);
