@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.7.1.min.js"></script>
-    <script src="login.js"></script>
-    <script src="base.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/store.js"></script>
 </head>
 <body>
-    <div class="page" id="page-login">
+    <div class="page" id="page-login" data-onpageswitch="document.body.classList.remove('animation-login2store')">
 
         <div class="page-login-form-div">
-            <img id="page-login-logo" src="logo-comfundo.jpg" alt="Celestial Perfumes">
+            <div class="page-login-img-wrap">
+
+                <img id="page-login-logo" src="logo-comfundo.jpg" alt="Celestial Perfumes">
+            </div>
             <span id="page-login-error"></span>
             <input type="email" name="page-login-input-email" id="page-login-input-email" placeholder="benjamin@btd6.com">
             <input type="password" name="page-login-input-password" id="page-login-input-password" placeholder="Password">
             <button class="page-login-loginbtn" id="page-login-loginbtn" onclick="login()">Log In</button>
         </div>
+
+    </div>
+
+    <div class="page hidden" id="page-store" data-onpageswitch="storePageSwitch()">
+
+        <h1 id="page-store-title">Welcome to Celestial Perfumes</h1>
+        <button onclick="localStorage.removeItem('usuario'); showPage('page-login')">Log Out</button>
 
     </div>
     

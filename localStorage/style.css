@@ -1,53 +1,21 @@
+
+/* CORE */
+
 * {
     padding: 0;
     margin: 0;
-    --accent-color: linear-gradient(203deg, rgba(2,0,36,1) 30%, rgba(190,0,255,1) 100%);
 }
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(203deg, rgba(2,0,36,1) 30%, rgba(190,0,255,1) 100%);
+    background: rgb(105, 0, 141);
     background-repeat: none;
     background-size: cover;
     height: 100vh;
     width: 100vw;
 }
 
-#page-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-}
-
-#page-login-logo {
-    width: 15rem;
-    border-radius: .5rem;
-}
-
-#page-login-error {
-    color: red;
-}
-
-.page-login-form-div {
-    background-color: #fff3;
-    backdrop-filter: blur(7px);
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-}
-@media (width <= 400px) {
-    .page-login-form-div {
-        width: 80vw;
-    }
-}
-.page-login-loginbtn {
-    background-color: limegreen;
-    color: white;
+.hidden {
+    display: none !important;
 }
 
 input, button {
@@ -61,4 +29,81 @@ input:focus, button:focus  {
     transition: all 1000ms ease-in-out;
     outline: none;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* BACKGROUND TRANSITIONS */
+
+body.animation-login2store {
+    animation: login2store 2s forwards;
+}
+
+@keyframes login2store {
+    from {
+        background-color: rgb(105, 0, 141);
+    }
+    to {
+        background-color: rgb(138, 0, 0);
+    }
+}
+
+/* PAGE LOGIN */
+
+#page-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page-login-logo {
+    width: 15rem;
+    max-width: 100%;
+    border-radius: .5rem;
+}
+
+#page-login-error {
+    color: lightcoral;
+}
+
+.page-login-img-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.page-login-form-div {
+    background-color: #fff3;
+    backdrop-filter: blur(7px);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+@media (width <= 400px) {
+    .page-login-form-div {
+        width: 70vw;
+    }
+}
+.page-login-loginbtn {
+    background-color: limegreen;
+    color: white;
+}
+
+/* PAGE STORE */
+
+#page-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    color: white;
+}
+
+#page-store-title {
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
 }
