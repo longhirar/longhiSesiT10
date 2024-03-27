@@ -19,3 +19,6 @@
     width: fit-content;
     border-radius: .3rem;
   }
+  .card > img {
+    border-radius: .5rem;
+  }
