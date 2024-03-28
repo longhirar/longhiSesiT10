@@ -6,10 +6,25 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import Menu from './components/Menu'
 
 import styles from './Contact.module.css'
+import { useState } from 'react';
 
 export default function Contact() {
     const position = [-25.4248583,-49.2728628]
 
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    })
+
+    const handleChange = (e) => {
+        const {name, value} = e.target
+        setFormData({...formData, [name]: value})
+    }
+
+    const handleZap = () => {
+        // todo
+    }
 
     return (
         <>
@@ -17,6 +32,12 @@ export default function Contact() {
             <div className={styles.contactDiv}>
                 <h1 className={styles.contactHeader}>Contato</h1>
                 <div>
+                    <div>
+                        <input id='input-name' type="text" name='name' placeholder='Name' onChange={handleChange}/>
+                        <input id='input-email' type="email" name='email' placeholder='E-Mail' onChange={handleChange}/>
+                        <textarea id='input-msg' placeholder='Message' name='message' onChange={handleChange}/>
+                        <button onClick={handleZap}></button>
+                    </div>
                     <h2>Mapa</h2>
                     <div>
                         <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{width: "500px", height:'300px'}}>
